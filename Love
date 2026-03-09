@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For Rabia ❤️</title>
+
+<style>
+
+body{
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+flex-direction:column;
+font-family:Arial;
+overflow:hidden;
+}
+
+.heart{
+position:relative;
+width:150px;
+height:150px;
+background:linear-gradient(45deg,#ff0000,#ff4d6d);
+transform:rotate(-45deg);
+animation:beat 1s infinite;
+box-shadow:0 0 60px red,0 0 120px red;
+}
+
+.heart:before,
+.heart:after{
+content:"";
+position:absolute;
+width:150px;
+height:150px;
+background:linear-gradient(45deg,#ff0000,#ff4d6d);
+border-radius:50%;
+}
+
+.heart:before{
+top:-75px;
+}
+
+.heart:after{
+left:75px;
+}
+
+@keyframes beat{
+0%{transform:rotate(-45deg) scale(1);}
+50%{transform:rotate(-45deg) scale(1.25);}
+100%{transform:rotate(-45deg) scale(1);}
+}
+
+.name{
+color:white;
+font-size:35px;
+margin-top:40px;
+text-shadow:0 0 20px red,0 0 40px red;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{opacity:0.6;}
+to{opacity:1;}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="heart"></div>
+
+<div class="name">
+I Love You Rabia ❤️
+</div>
+
+</body>
+</html>
